@@ -1,0 +1,603 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #000;
+    --cor-de-link: #00DCF5;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.menu__header{
+    display: flex;
+    margin-left: 1rem;
+    justify-content: space-between;
+}
+.menu__imagen{
+    height: 3rem;
+    align-self: center;
+}
+.menu__title{
+    color: #00DCF5;
+    margin-left: 1rem;
+}
+.menu__list{
+    display: flex;
+    margin-right: 1rem;
+}
+.menu__list__item{
+    margin-right: 1rem;
+}
+.menu__list__item__btn{
+    background-color: #000;
+    border: 2px solid #D632D9;
+    border-radius: 40px;
+    color: #00DCF5;
+    height: 2rem;
+}
+.menu__list__item__btn:hover, .menu__list__item__btn__cv:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.menu__list__item__btn__cv{
+    background-color: #000;
+    border: 2px solid #00DCF5;
+    border-radius: 40px;
+    color: #00DCF5;
+    height: 2rem;
+}
+.menu__list__item__contacto{
+    display: flex;
+}
+.menu__contacto__item{
+    display: none;
+}
+
+/*Sección Title*/
+
+section.title{
+    background: url(../Images/fondo-title.png) no-repeat center / cover ;
+}
+.title__div{
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+.title__container{
+    color: #fdfdfd;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.title__bio__name{
+    color: #00DCF5;
+    font-size: 2rem;
+}
+.title__profile{
+    height: 30%;
+    width: 30%;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    border-radius: 40% 60% 42% 58% / 59% 66% 34% 41%;
+    
+}
+.title__network{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+.title__network__item__logo{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.title__network__item__logo:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+/*Sección About*/
+
+
+
+.about{
+    display: flex;
+    padding: 2% 10%;
+    align-items: center;
+}
+.about__logo--img{
+    height: 70vh;
+    width: 30vw;
+}
+.about__container{
+    width: 80%;
+    color: #fdfdfd;
+    
+}
+.about__title{
+    margin: 2% 5%;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 4px solid #00DCF5;
+    width: 70%;
+}
+.about__paragraph{
+    font-size: 1.5rem;
+    color: #d0d0d0;
+    text-align: justify;
+}
+/*Seccion Skills*/
+
+.skills__title{
+    text-align: center;
+    margin: 7% 15% 2% 15%;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 4px solid #00DCF5;
+    width: 70%;
+}
+.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 20%;
+    width: 60vw;
+}
+.skills__box{
+    background: #0D3134;
+    color: #d0d0d0;
+    border-radius: 100px;
+    width: 30vh;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+.skills__img{
+    margin: 0 10%;
+    align-items: center;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    margin-bottom: 5%;
+}
+.hobbies__title{
+    text-align: center;
+    margin: 7% 15% 2% 15%;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 4px solid #00DCF5;
+    width: 70%;
+}
+.hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 20%;
+    width: 60vw;
+}
+.hobbies__box{
+    background: #0D3134;
+    color: #d0d0d0;
+    border-radius: 100px;
+    width: 34vh;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+.hobbies__img{
+    margin: 0 10%;
+    align-items: center;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+/* Experiencia Académica*/
+
+section.academic{
+    padding: 3%;
+}
+.academic__title{
+    text-align: center;
+    margin: 7% 15% 2% 15%;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 4px solid #00DCF5;
+    width: 70%;
+}
+.academic__courses{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.academic__courses__banner{
+    background-color: #fdfdfd;
+    border-radius: 10%;
+    width: 95%;
+}
+.academic__courses__box{
+    align-items: center;
+    background-color: hsl(0deg, 0%, 15%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 25vw;
+    margin-bottom: 25px;
+    color: #d0d0d0;
+}
+.academic__courses__item__title{
+    color: #2E83F2;
+}
+.academic__courses__item__institucion{
+    color: #fdfdfd;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.academic__courses__item__img{
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    border: 5px solid #0D3134;
+    margin-bottom: 15px;
+    margin-top: -50px;
+}
+
+/* experiencia*/
+
+section.experience{
+    padding: 3%;
+}
+.experience__section__title{
+    text-align: center;
+    margin: 7% 15% 2% 15%;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 4px solid #00DCF5;
+    width: 70%;
+}
+.experience__line{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.experience__box{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0deg, 0%, 15%);
+    border-radius: 20px;
+    height: 60vh;
+    margin: 1%;
+    padding: 1.5% .5%;
+    width: 20vw;
+    color: #d0d0d0;
+    transition: .5 s ease-in-out;
+}
+.experience__box:hover  .experience__description{
+    transform: scale(1.1);
+    transition: 0.5s; 
+    visibility: visible;
+}
+.experience__img{
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    border-radius: 15%;
+    border: 5px solid #49505C;
+}
+
+.experience__info{
+    width:90%
+}
+.experience__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.experience__description{
+    width: 70%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 25%;
+    left: 15%;
+    visibility: hidden;
+}
+.experiencia__botao--repo{
+    background: linear-gradient(90deg, rgba(58,180,176,1) 0%, rgba(13,49,52,1) 100%);
+    color: #EAF2FD;
+    border: none;
+    border-radius: 50px;
+    height: 2.5rem;
+    width: 100%;
+    margin: 3% 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.experiencia__botao--repo:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.experience__botao--demo{
+    background: linear-gradient(90deg, rgba(58,180,176,1) 0%, rgba(13,49,52,1) 100%);
+    color: #EAF2FD;
+    border: none;
+    border-radius: 50px;
+    height: 2.5rem;
+    width: 100%;
+    margin: 3% 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.experience__botao--demo:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+/*Contacto*/
+
+section.formcontato{
+    background: url(../Images/fondo-title.png) no-repeat center / cover;
+    padding: 2% 2% 3% 5%;
+}
+.formcontato__text{
+    width: 50vw;
+    height: 80vh;
+    margin-left: 1.5rem ;
+    text-align: center;
+}
+.formcontato__title{
+    text-align: center;
+    margin: 7% 15% 2% 15%;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 4px solid #00DCF5;
+    width: 70%;
+}
+.formcontato__contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formcontato__input{
+    width: 90%;
+    background-color: #1D2540;
+    height: 2.5rem;
+    margin-top: 3%;
+    margin-bottom: 0.1rem;
+    border:3px dotted #00DCF5;
+    border-radius: 10px;
+    opacity: 0.7;
+    color: #00DCF5;
+    font-size: 1.1rem;
+}
+.formcontato__textarea{
+    background-color: #1D2540;
+    width: 90%;
+    height: 7rem;
+    margin-top: 3%;
+    margin-bottom: 0.1rem;
+    border: 3px dotted #00DCF5;
+    border-radius: 10px;
+    resize: none;
+    opacity: 0.7;
+    color: #00DCF5;
+    font-size: 1.1rem;
+}
+.formcontato__input::placeholder{
+    color: #d0d0d0;
+    font-size: 1.1rem;
+}
+.formcontato__textarea::placeholder{
+    color: #d0d0d0;
+    font-size: 1.1rem;
+}
+.formcontato__botao{
+    background:none;
+    color: #00DCF5;
+    border: 3px solid #00DCF5;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 25%;
+    margin-top: 5%;
+}
+.formcontato__botao:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background: #1D2540;
+}
+.formcontato__input:focus{
+    border: 3px dotted #D632D9;
+    outline: none ;
+}
+.formcontato__textarea:focus{
+    border: 3px dotted #D632D9;
+    outline: none ;
+}
+.input-message-error{
+    display: flex;
+    justify-content: center;
+    color: #d0d0d0;
+}
+.input__container-invalido .input{
+    border-color: #ff000060;
+    background-color: #ff000060;
+    color: #d0d0d0;
+}
+.input__container-valido .input{
+    width: 90%;
+    background-color: #1D2540;
+    height: 2.5rem;
+    margin-top: 3%;
+    margin-bottom: 0.1rem;
+    border:3px dotted #00DCF5;
+    border-radius: 10px;
+    opacity: 0.7;
+    color: #00DCF5;
+    font-size: 1.1rem;
+}
+
+.input-message-error{
+    display: none;
+}
+/*footeer*/
+
+section.footer{
+    border-top: 2px solid #D632D9;
+    text-align: center;
+    color: #00DCF5;
+}
+.footer__rodape{
+    padding: 2%;
+}
+.footer p{
+    margin: .2rem;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+
+    /* Menú */
+    section.menu{
+        justify-content: space-between;
+    }
+    .menu__list{
+        display: none;
+    }
+    .menu__contacto__item{
+        display: flex;
+        margin-right: 1rem;
+    }
+    /*title*/
+
+    .title__container{
+        font-size: .8rem;
+        margin: 0;
+    }
+    .title__profile{
+        width: 20%;
+    }
+    .title__network{
+        padding: 0;
+        justify-content: space-between;
+    }
+    /*Sección About*/
+    .about__container{
+        width: 100%;
+    }
+    /*Skills*/
+    .skills__box{
+        width: 45vh;
+        margin-bottom: 2rem;
+    }
+    /*Hobbies*/
+    .hobbies__box{
+        width: 45vh;
+        margin-bottom: 2rem;
+    }
+    /*Formación Académica*/
+    .academic__courses__list{
+        justify-content: space-around;
+    }
+
+    /*Experiencia Profesional*/
+    .experiencia__botao--repo, .experience__botao--demo{
+        width: 40%;
+    }
+    /*Contacto*/
+    section.formcontato{
+        padding: 5% 3%;
+    }
+    .formcontato__img{
+        display: none;
+    }
+    .formcontato__text{
+        width: 90vw;
+        height: 100vh;
+        
+    }
+    .formcontato__textarea{
+        margin-bottom: 2rem;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
