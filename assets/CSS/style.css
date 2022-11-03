@@ -525,72 +525,7 @@ section.footer{
 Utiliza las referencias de los breakpoints @media abajo */
 
 
-/*Tablet*/
-@media screen and (max-width: 768px) {
 
-    /* Menú */
-    section.menu{
-        justify-content: space-between;
-    }
-    .menu__list{
-        display: none;
-    }
-    .menu__contacto__item{
-        display: flex;
-        margin-right: 1rem;
-    }
-    /*title*/
-
-    .title__container{
-        font-size: .8rem;
-        margin: 0;
-    }
-    .title__profile{
-        width: 20%;
-    }
-    .title__network{
-        padding: 0;
-        justify-content: space-between;
-    }
-    /*Sección About*/
-    .about__container{
-        width: 100%;
-    }
-    /*Skills*/
-    .skills__box{
-        width: 45vh;
-        margin-bottom: 2rem;
-    }
-    /*Hobbies*/
-    .hobbies__box{
-        width: 45vh;
-        margin-bottom: 2rem;
-    }
-    /*Formación Académica*/
-    .academic__courses__list{
-        justify-content: space-around;
-    }
-
-    /*Experiencia Profesional*/
-    .experiencia__botao--repo, .experience__botao--demo{
-        width: 40%;
-    }
-    /*Contacto*/
-    section.formcontato{
-        padding: 5% 3%;
-    }
-    .formcontato__img{
-        display: none;
-    }
-    .formcontato__text{
-        width: 90vw;
-        height: 100vh;
-        
-    }
-    .formcontato__textarea{
-        margin-bottom: 2rem;
-    }
-}
 
 /*Mobile*/
 @media screen and (max-width: 425px) {

@@ -4,7 +4,7 @@ const inputs = document.querySelectorAll("input, textarea");
 const expresiones = {
   nombre: /^[a-zA-Z\s]{2,30}$/,
   email: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-  mensaje: /[\s\S]{10,180}/
+  mensaje: /[\s\S]{10,300}/
 };
 
 const campos = {

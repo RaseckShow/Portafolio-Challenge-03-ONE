@@ -1,0 +1,93 @@
+/*Tablet*/
+@media screen and (max-width: 768px) {
+
+    /* Menú */
+    section.menu{
+        justify-content: space-between;
+    }
+    .menu__list{
+        display: none;
+    }
+    .menu__contacto__item {
+        display: flex;
+        margin-right: 1rem;
+    }
+    .menu__list__item__btn_cv{
+        background-color: #000;
+        border: 2px solid #00DCF5;
+        border-radius: 40px;
+        color: #00DCF5;
+        height: 2rem;
+    }
+    /*title*/
+
+    .title__container{
+        font-size: .8rem;
+        margin: 0;
+    }
+    .title__profile{
+        width: 20%;
+    }
+    .title__network{
+        padding: 0;
+        justify-content: space-around;
+    }
+    /*Sección About*/
+    .about{
+        padding: 1% 3%;
+    }
+    .about__container{
+        width: 100%;
+    }
+    .about__logo{
+        display: none;
+    }
+    
+    /*Skills*/
+    .skills__line{
+        margin-left: 5%;
+        width: 90vw;
+    }
+    .skills__box{
+        width: 20vw;
+        margin-bottom: 1rem;
+    }
+    /*Hobbies*/
+    .hobbies__line{
+        margin-left: 5%;
+        width: 90vw;
+    }
+    .hobbies__box{
+        width: 27vw;
+        margin-bottom: 1rem;
+    }
+    /*Formación Académica*/
+    .academic__courses{
+        flex-wrap: wrap;
+    }
+    .academic__courses__box{
+        width: 40vw;
+    }
+    /*Experiencia Profesional*/
+    .experience__box{
+        width: 40vw;
+        height: 70vh;
+    }
+    .experiencia__botao--repo, .experience__botao--demo{
+        width: 100%;
+    }
+    /*Contacto*/
+    section.formcontato{
+        padding: 10% 3%  3% 3%;
+    }
+    .formcontato__contacto{
+        height: 75vh;
+    }
+    .formcontato__text{
+        width: 70vw;
+        height: 100vh; 
+    }
+    .formcontato__botao{
+        margin-top: 1%;
+    }
+}
