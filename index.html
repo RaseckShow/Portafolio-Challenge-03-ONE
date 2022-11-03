@@ -234,7 +234,7 @@
             <div  class="formcontato__contacto">
                 <div class="formcontato__text">
                     <h2 class="formcontato__title">Contactame</h2>
-                    <form class="formcontato__form" name="form">
+                    <form class="formcontato__form" name="form" id="formulario">
                         <div class="input-container" id="input__container__nombre">
                             <input class="formcontato__input input" type="text" name="nombre" placeholder="Nombre" data-tipo="nombre" required>
                             <span class="input-message-error" id="nombre-error">Este campo no es valido</span>
@@ -248,8 +248,10 @@
                             <span class="input-message-error" id="mensaje-error">Este campo no es valido</span>
                         </div>
                         
-                        <button id="btn-enviarFormulario" type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        <button id="btn-enviarFormulario" type="submit" class="formcontato__botao">Enviar</button>
+                        
                     </form>
+                    <span id="mensaje__envioCorrecto" class="mensaje__envioCorrecto">El formulario se envio correctamente</span>
                 </div>
             </div>
     </section>

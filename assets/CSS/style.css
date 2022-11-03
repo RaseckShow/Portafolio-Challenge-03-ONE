@@ -454,6 +454,7 @@ section.formcontato{
     height: 2.5rem;
     width: 25%;
     margin-top: 5%;
+    margin-bottom: 1%;
 }
 .formcontato__botao:hover{
     transform: scale(1.1);
@@ -493,6 +494,18 @@ section.formcontato{
 
 .input-message-error{
     display: none;
+}
+.mensaje__envioCorrecto, .mensaje__envioIncorrecto{
+    display: none;
+}
+.mensaje__envioCorrecto-activo{
+    color: #fdfdfd;
+    background-color: green;
+    border-radius: 15px;
+    opacity: 0.8;
+    display: flex;
+    padding: 2%;
+    justify-content: center;
 }
 /*footeer*/
 
