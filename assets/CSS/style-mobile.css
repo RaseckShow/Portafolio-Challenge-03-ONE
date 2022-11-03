@@ -1,0 +1,51 @@
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    /*title*/
+    .title__div{
+        flex-direction: column-reverse;
+    }
+    .title__profile{
+        width: 30%;
+    }
+    .title__container{
+        text-align: justify;
+        padding: 0 11%;
+    }
+    
+    /*Sección About*/
+    .about{
+        display: block;
+    }
+    .about__container{
+        width: 88%;
+        padding: 0 6%;
+        font-size: 0.4rem;
+    }
+    /*Skills*/
+    .skills__box{
+        width: 40vw;
+    }
+    /*Hobbies*/
+    .hobbies__box{
+        width: 43vw;
+    }
+    /*Formación Académica*/
+    .academic__courses__box{
+        width: 70vw;
+    }
+    /*Experiencia Profesional*/
+    .experience__box{
+        width: 80vw;
+        margin-bottom: 5%;
+    }
+    /*Contacto*/
+    .formcontato__title{
+        text-align: center;
+    }
+    .formcontato__text{
+        width: 90vw; 
+    }
+    .formcontato__botao{
+        width: 60vw;
+    }
+}
